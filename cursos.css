@@ -1,0 +1,93 @@
+main {
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+}
+
+.curso-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #202020;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid #f5a000;
+}
+
+div {
+    padding: 12px 24px;
+}
+
+.curso {
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+.curso-item li {
+    background-color: #4d4d4d;
+    border-radius: 5px;
+    padding: 12px 16px;
+    position: relative;
+}
+
+.curso-item ul {
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cursos {
+    flex-direction: column;
+    padding-left: 0px;
+
+}
+
+.curso-item span {
+    height: 5px;
+    width: 32px;
+    background-color: #f5a000;
+    display: block;
+    border-radius: 5px;
+    transition: 3s ease;
+}
+
+.curso-item a {
+    background-color: #161649;
+    width: 250px;
+    height: 22px;
+    display: inline-block;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 15px;
+    right: -75px;
+    transform: rotate(-35deg);
+}
+
+.curso-item:hover span {
+    width: 150px;
+    background-color: #f5a000;
+    transition: 3s ease;
+}
+
+.curso-item img {
+    min-height: 427px;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+@media screen and (max-width:700px) {
+    .curso-item {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        gap: 0px;
+    }
+}
